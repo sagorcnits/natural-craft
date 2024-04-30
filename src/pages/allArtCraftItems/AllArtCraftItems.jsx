@@ -5,13 +5,11 @@ const AllArtCraftItems = () => {
   return (
     <div className="max-w-6xl mx-auto">
       <h1 className="text-center text-[30px] md:text-[40px] poppins-font font-bold py-3">
-        All Art & craft Items
+        All Jute & wooden Crafts Item
       </h1>
       <div className="divider-text"></div>
       <p className="poppins-paragraph text-center py-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, a!
-        Distinctio alias, <br /> delectus debitis in nesciunt optio impedit,
-        quasi perspiciatis animi commodi
+      You can see the details of all our products
       </p>
 
       <div className="overflow-x-auto mt-8">

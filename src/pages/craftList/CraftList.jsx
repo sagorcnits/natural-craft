@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { Fade, Zoom } from "react-awesome-reveal";
 import { IoMdArrowDropdown } from "react-icons/io";
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
 import { AuthContext } from "../../components/AuthProvider";
 import CraftListCard from "../../components/CraftListCard";
 
@@ -84,17 +84,12 @@ const CraftList = () => {
   return (
     <div className="max-w-6xl mx-auto">
       <Fade delay={300}>
-      <h1 className="text-center text-[30px] md:text-[40px] poppins-font font-bold py-3">
-        My Art&<span className="text-orange">Craft List</span>
-      </h1>
+        <h1 className="text-center text-[30px] md:text-[40px] poppins-font font-bold py-3">
+          My Art&<span className="text-orange">Craft List</span>
+        </h1>
       </Fade>
-      <Fade  delay={400}>
-      <div className="divider-text"></div>
-      <p className="poppins-paragraph text-center py-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, a!
-        Distinctio alias, <br /> delectus debitis in nesciunt optio impedit,
-        quasi perspiciatis animi commodi
-      </p>
+      <Fade delay={400}>
+        <div className="divider-text"></div>
       </Fade>
       <div className="relative w-[130px]">
         <div
@@ -133,10 +128,10 @@ const CraftList = () => {
         {userData.map((item, id) => (
           <Zoom>
             <CraftListCard
-            key={id}
-            item={item}
-            handleDelete={handleDelete}
-          ></CraftListCard>
+              key={id}
+              item={item}
+              handleDelete={handleDelete}
+            ></CraftListCard>
           </Zoom>
         ))}
       </div>
