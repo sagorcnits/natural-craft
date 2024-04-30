@@ -57,7 +57,7 @@ const UpdatePage = () => {
     <div className="max-w-6xl mx-auto">
       <div className="md:w-[70%] mx-auto p-2 md:p-6 bg-[#F5F5F5] box-shadow">
         <h1 className="text-center text-[30px] md:text-[40px] poppins-font font-bold ">
-          Update Your <span className="text-orange">Craft</span>
+          Update Your <span className="text-orange">Item</span>
         </h1>
         <div className="divider-text"></div>
         <form className="addCraft mt-10" onSubmit={handleUpdate}>

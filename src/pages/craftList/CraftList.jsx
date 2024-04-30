@@ -90,6 +90,9 @@ const CraftList = () => {
       </Fade>
       <Fade delay={400}>
         <div className="divider-text"></div>
+        <p className="poppins-paragraph text-center py-4">
+          Your all added Item you can do each item delete, update just try again
+        </p>
       </Fade>
       <div className="relative w-[130px]">
         <div
