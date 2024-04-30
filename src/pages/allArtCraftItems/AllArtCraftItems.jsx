@@ -31,7 +31,7 @@ const AllArtCraftItems = () => {
                     <td>{item.itemName}</td>
                     <td>{item.subcategory_Name}</td>
                     <td>{item.price}</td>
-                    <td>{item.customiazation}</td>
+                    <td>{item.customization}</td>
                     <td>
                       <Link to={`/details/${item._id}`}>
                         <button className="button bg-green-500 poppins-font text-[17px]">
