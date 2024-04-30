@@ -10,7 +10,6 @@ const Home = () => {
   const [categories, setCategories] = useState([]);
   const itemsData = useLoaderData();
 
-
   // console.log(itemsData)
   useEffect(() => {
     fetch("https://natural-craft-server.vercel.app/categories")
@@ -34,9 +33,8 @@ const Home = () => {
         <div className="divider-text"></div>
         <Fade direction="left">
           <p className="poppins-paragraph text-center py-4 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
-            a! Distinctio alias, <br /> delectus debitis in nesciunt optio
-            impedit, quasi perspiciatis animi commodi
+            Below are some of our most popular items. <br /> See details for
+            their excellent quality
           </p>
         </Fade>
         <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
@@ -56,9 +54,7 @@ const Home = () => {
         <div className="divider-text"></div>
         <Bounce>
           <p className="poppins-paragraph text-center py-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
-            a! Distinctio alias, <br /> delectus debitis in nesciunt optio
-            impedit, quasi perspiciatis animi commodi
+            You can see all of them by visiting our item category
           </p>
         </Bounce>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 my-10">
@@ -71,32 +67,30 @@ const Home = () => {
       </section>
       <section className="my-14">
         <Zoom>
-        <h1 className="text-center text-[30px] md:text-[40px] poppins-font font-bold py-3">
-          Most Puppoler <span className="text-orange"> Brands</span>
-        </h1>
+          <h1 className="text-center text-[30px] md:text-[40px] poppins-font font-bold py-3">
+            Most Puppoler <span className="text-orange"> Brands</span>
+          </h1>
         </Zoom>
         <div className="divider-text"></div>
         <Bounce>
-        <p className="poppins-paragraph text-center py-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, a!
-          Distinctio alias, <br /> delectus debitis in nesciunt optio impedit,
-          quasi perspiciatis animi commodi
-        </p>
+          <p className="poppins-paragraph text-center py-4">
+          There are some popular bands  which provide very good quality service
+          </p>
         </Bounce>
         <Brands></Brands>
       </section>
-     <section className="max-w-6xl mx-auto border-t border-dashed">
+      <section className="max-w-6xl mx-auto border-t border-dashed">
         <Bounce>
-        <h1 className="text-center text-[30px] md:text-[40px] poppins-font font-bold pb-2 pt-10 py-3">
-          <span className="text-orange">What Our </span> Clients Saying
-        </h1>
-        <div className="divider-text"></div>
+          <h1 className="text-center text-[30px] md:text-[40px] poppins-font font-bold pb-2 pt-10 py-3">
+            <span className="text-orange">What Our </span> Clients Saying
+          </h1>
+          <div className="divider-text"></div>
         </Bounce>
-     <Zoom direction="up">
-        <div className="my-14">
-          <ReviewSlider></ReviewSlider>
-        </div>
-     </Zoom>
+        <Zoom direction="up">
+          <div className="my-14">
+            <ReviewSlider></ReviewSlider>
+          </div>
+        </Zoom>
       </section>
     </div>
   );
