@@ -38,7 +38,7 @@ const UpdatePage = () => {
       description,
     };
     // console.log(addItem);
-    fetch(`https://natural-craft-server.vercel.app/items/${user.email}`, {
+    fetch(`https://natural-craft-server.vercel.app/items/${updateData._id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -52,6 +52,8 @@ const UpdatePage = () => {
           text: "Your Item Update",
           icon: "success"
         });
+
+        console.log(data)
       });
   };
 

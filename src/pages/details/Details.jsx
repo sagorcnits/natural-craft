@@ -22,6 +22,7 @@ const Details = () => {
             {detailsData.stock}
           </span>
         </div>
+
         <div className="md:w-[70%] relative">
           <h1 className="text-[20px] lg:text-[30px] poppins-font  pb-2">
             {detailsData.itemName}
