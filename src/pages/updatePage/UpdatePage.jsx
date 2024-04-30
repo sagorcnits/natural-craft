@@ -1,11 +1,13 @@
 import { useContext } from "react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import Swal from 'sweetalert2';
 import { AuthContext } from "../../components/AuthProvider";
 const UpdatePage = () => {
   const { user } = useContext(AuthContext);
-  const [updateData] = useLoaderData();
-  //   console.log(updateData);
+  const detailsId = useParams();
+  const items = useLoaderData();
+  const updateData= items.find((item) => item._id === detailsId.id);
+    console.log(updateData);
 
   const handleUpdate = (e) => {
     e.preventDefault();

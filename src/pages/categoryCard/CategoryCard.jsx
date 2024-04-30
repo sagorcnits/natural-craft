@@ -10,7 +10,7 @@ const CategoryCard = () => {
       </h1>
       <div className="divider-text"></div>
       <p className="poppins-paragraph text-center py-4">
-        You can see all the items in our category by visiting the details
+        You can see all the items in our category by visiting the details each Item 
       </p>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
         {categoryData.map((item, id) => (

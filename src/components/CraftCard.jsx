@@ -14,9 +14,9 @@ const CraftCard = ({ item }) => {
   } = item;
 
   return (
-    <div className="duration-500 border rounded-md overflow-hidden p-3 cursor-pointer relative craftCard bg-[#F5F5F5]">
-      <figure>
-        <img className="w-full rounded-md" src={PhotoUrl} alt="" />
+    <div className=" duration-500 h-[500px] border rounded-md overflow-hidden p-3 cursor-pointer relative craftCard bg-[#F5F5F5]">
+      <figure className="h-[200px] overflow-hidden">
+        <img className="w-full  rounded-md" src={PhotoUrl} alt="" />
       </figure>
       <span className="p-1 absolute  top-4 right-4 bg-red-500  font-bold text-white rounded-md poppins-pargraph">
         {stock}
@@ -34,7 +34,7 @@ const CraftCard = ({ item }) => {
         </div>
         <p>{description}</p>
       </div>
-      <div className="text-center">
+      <div className="text-center absolute bottom-0 w-full py-2">
         <Link to={`/details/${_id}`}>
           <button className="button">View Details</button>
         </Link>

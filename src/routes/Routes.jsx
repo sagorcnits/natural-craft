@@ -64,14 +64,16 @@ const router = createBrowserRouter([
             <Details></Details>
           </PrivateRoute>
         ),
-        loader:()=> fetch(`https://natural-craft-server.vercel.app/items`)
+        loader: () => fetch(`https://natural-craft-server.vercel.app/items`),
       },
 
       {
         path: "/category/:id",
         element: <CategoryCard></CategoryCard>,
         loader: ({ params }) =>
-          fetch(`https://natural-craft-server.vercel.app/categories/${params.id}`),
+          fetch(
+            `https://natural-craft-server.vercel.app/categories/${params.id}`
+          ),
       },
 
       {
@@ -82,8 +84,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
 
-        loader: ({ params }) =>
-          fetch(`https://natural-craft-server.vercel.app/items/${params.id}`),
+        loader: () => fetch(`https://natural-craft-server.vercel.app/items`),
       },
     ],
   },

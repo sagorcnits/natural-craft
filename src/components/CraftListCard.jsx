@@ -1,10 +1,7 @@
-import { useContext } from "react";
 import { FcRating } from "react-icons/fc";
 import { Link } from "react-router-dom";
-import { AuthContext } from "./AuthProvider";
 
 const CraftListCard = ({ item, handleDelete }) => {
-  const {user} = useContext(AuthContext)
   const { _id, PhotoUrl, itemName, price, rating, customization, stock } = item;
 
   return (
@@ -28,7 +25,7 @@ const CraftListCard = ({ item, handleDelete }) => {
         </div>
       </div>
       <div className="text-center flex justify-between">
-        <Link to={`/update/${user.email}`}>
+        <Link to={`/update/${_id}`}>
           <button className="button bg-green-700">Update</button>
         </Link>
         <button className="button bg-red-500" onClick={() => handleDelete(_id)}>
