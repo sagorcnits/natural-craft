@@ -34,7 +34,7 @@ const AddCraft = () => {
       description,
     };
 
-    fetch("https://natural-craft-server-pa36zjjjg-sagor-hossains-projects.vercel.app/items", {
+    fetch("https://natural-craft-server.vercel.app/items", {
       method: "POST",
       headers: {
         "content-type": "application/json",

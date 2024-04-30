@@ -36,7 +36,7 @@ const UpdatePage = () => {
       description,
     };
     // console.log(addItem);
-    fetch(`https://natural-craft-server-pa36zjjjg-sagor-hossains-projects.vercel.app/items/${user.email}`, {
+    fetch(`https://natural-craft-server.vercel.app/items/${user.email}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

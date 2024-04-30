@@ -10,8 +10,10 @@ const Home = () => {
   const [categories, setCategories] = useState([]);
   const itemsData = useLoaderData();
 
+
+  // console.log(itemsData)
   useEffect(() => {
-    fetch("https://natural-craft-server-pa36zjjjg-sagor-hossains-projects.vercel.app/categories")
+    fetch("https://natural-craft-server.vercel.app/categories")
       .then((res) => res.json())
       .then((data) => setCategories(data));
   }, []);

@@ -27,11 +27,9 @@ const Banner = () => {
             <h1 className="text-[40px] poppins-bold">
               Wooden Furniture & Sculptures
             </h1>
-            <p className="poppins-reguler">Beautiful Villa with Ocean View</p>
+            <p className="poppins-reguler">Wooden furniture is very good as you can see</p>
             <p>
-              This stunning villa offers breathtaking views of the ocean and
-              luxurious amenities. Perfect for those seeking ultimate comfort
-              and relaxation.
+            Good Quality Wooden Furniture We offer our best quality services to you all in going
             </p>
           </div>
         </div>
@@ -40,11 +38,9 @@ const Banner = () => {
         <div className="rounded-md overflow-hidden  md:h-[550px] h-[300px] bg-[url('https://img.freepik.com/free-photo/empty-modern-room-with-furniture_23-2149178339.jpg?t=st=1714126350~exp=1714129950~hmac=7f4fc16ce2983081aa37df6cc77c345ef8221521755bec6ae809ffe7bb05a534&w=740')] bg-center bg-cover bg-no-repeat bg-blend-multiply bg-[#8ba0b1] flex justify-center items-center">
           <div className="md:w-1/2 mx-auto text-center  text-white flex flex-col gap-4">
             <h1 className="text-[40px] poppins-bold">Wooden Home Decor</h1>
-            <p className="poppins-reguler">Beautiful Villa with Ocean View</p>
+            <p className="poppins-reguler">Wooden furniture is very good as you can see</p>
             <p>
-              This stunning villa offers breathtaking views of the ocean and
-              luxurious amenities. Perfect for those seeking ultimate comfort
-              and relaxation.
+            Good Quality Wooden Furniture We offer our best quality services to you all in going
             </p>
           </div>
         </div>
@@ -55,11 +51,9 @@ const Banner = () => {
             <h1 className="text-[40px] poppins-bold">
               Wooden Utensils and Kitchenware
             </h1>
-            <p className="poppins-reguler">Beautiful Villa with Ocean View</p>
+            <p className="poppins-reguler">Wooden furniture is very good as you can see</p>
             <p>
-              This stunning villa offers breathtaking views of the ocean and
-              luxurious amenities. Perfect for those seeking ultimate comfort
-              and relaxation.
+            Good Quality Wooden Furniture We offer our best quality services to you all in going
             </p>
           </div>
         </div>

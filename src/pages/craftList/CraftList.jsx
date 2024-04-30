@@ -14,7 +14,7 @@ const CraftList = () => {
   const [isActive, setActive] = useState(false);
 
   useEffect(() => {
-    fetch(`https://natural-craft-server-pa36zjjjg-sagor-hossains-projects.vercel.app/items/${user.email}`)
+    fetch(`https://natural-craft-server.vercel.app/items/${user.email}`)
       .then((res) => res.json())
       .then((data) => {
         setUserData(data);
@@ -33,7 +33,7 @@ const CraftList = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://natural-craft-server-pa36zjjjg-sagor-hossains-projects.vercel.app/items/${_id}`, {
+        fetch(`https://natural-craft-server.vercel.app/items/${_id}`, {
           method: "DELETE",
           headers: {
             "content-type": "application/json",
