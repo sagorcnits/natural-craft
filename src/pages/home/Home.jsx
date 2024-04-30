@@ -11,7 +11,7 @@ const Home = () => {
   const itemsData = useLoaderData();
 
   useEffect(() => {
-    fetch("http://localhost:5000/categories")
+    fetch("https://natural-craft-server-pa36zjjjg-sagor-hossains-projects.vercel.app/categories")
       .then((res) => res.json())
       .then((data) => setCategories(data));
   }, []);

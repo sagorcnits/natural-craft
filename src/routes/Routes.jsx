@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("http://localhost:5000/items"),
+        loader: () => fetch("https://natural-craft-server-pa36zjjjg-sagor-hossains-projects.vercel.app/items"),
       },
 
       {
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       {
         path: "/allcraft",
         element: <AllArtCraftItems></AllArtCraftItems>,
-        loader: () => fetch("http://localhost:5000/items"),
+        loader: () => fetch("https://natural-craft-server-pa36zjjjg-sagor-hossains-projects.vercel.app/items"),
       },
 
       {
@@ -64,14 +64,14 @@ const router = createBrowserRouter([
             <Details></Details>
           </PrivateRoute>
         ),
-        loader:()=> fetch(`http://localhost:5000/items`)
+        loader:()=> fetch(`https://natural-craft-server-pa36zjjjg-sagor-hossains-projects.vercel.app/items`)
       },
 
       {
         path: "/category/:id",
         element: <CategoryCard></CategoryCard>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/categories/${params.id}`),
+          fetch(`https://natural-craft-server-pa36zjjjg-sagor-hossains-projects.vercel.app/categories/${params.id}`),
       },
 
       {
@@ -83,7 +83,7 @@ const router = createBrowserRouter([
         ),
 
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/items/${params.id}`),
+          fetch(`https://natural-craft-server-pa36zjjjg-sagor-hossains-projects.vercel.app/items/${params.id}`),
       },
     ],
   },
