@@ -12,7 +12,7 @@ const Footer = () => {
           <p className="poppins-paragraph  text-[17px]">
             Art Industries Ltd.
             <br />
-            Providing Natural wooden Crafts From 2000
+            Providing Natural wooden Crafts From 2002
           </p>
         </aside>
         <nav className="md:justify-self-end *:poppins-paragraph">
